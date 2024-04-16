@@ -317,12 +317,18 @@ class Main(SettingsManager, scripts.Script):
 
                     if p.color_corrections is not None and i < len(p.color_corrections):
                         if shared.opts.save and not p.do_not_save_samples and shared.opts.save_images_before_color_correction:
-                            image_without_cc = processing.apply_overlay(image, p.paste_to, i, p.overlay_images)
+##                            image_without_cc = processing.apply_overlay(image, p.paste_to, i, p.overlay_images)
+                            if p.overlay_images and batch_index < len(p.overlay_images):
+                                selected_overlay = p.overlay_images[batch_index]
+                                image = processing.apply_overlay(image, p.paste_to, selected_overlay)
+                            else:
+                                return image
                             images.save_image(image_without_cc, p.outpath_samples, "", seeds[i], prompts[i], shared.opts.samples_format, info=infotext(n, i), p=p, suffix="-before-color-correction")
 
                         image = processing.apply_color_correction(p.color_corrections[i], image)
 
-                    image = processing.apply_overlay(image, p.paste_to, i, p.overlay_images)
+##                    image = processing.apply_overlay(image, p.paste_to, i, p.overlay_images)
+                        image = processing.apply_overlay(image, p.paste_to, selected_overlay)
 
                     if shared.opts.samples_save and not p.do_not_save_samples:
                         images.save_image(image, p.outpath_samples, "", seeds[i], prompts[i], shared.opts.samples_format, info=infotext(n, i), p=p)
