@@ -4,6 +4,15 @@
 # NOTE
 Forked from main as main archive, and therefore not updated for latest automatic1111. Main.py script edited to ensure now works, testing in progress.
 
+## To do
+Test several models txt2img
+Test all parameters for txt2img
+Test several models img2img
+Test all parameters for img2img
+Update main page to reflect update
+Decide on future of fork (time, and knowledge to do anything further?)
+Notify Stable Horde somehow
+
 ## Features
 
 - **txt2img**, **img2img**, **depth2img**, **pix2pix**, **inpaint** and **interrogation** (img2txt)
