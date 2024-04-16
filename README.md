@@ -1,7 +1,7 @@
 # Stable Horde for Web UI
 [Stable Horde](https://stablehorde.net) client for AUTOMATIC1111's [Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
-#NOTE
+# NOTE
 Forked from main as main archive, and therefore not updated for latest automatic1111. Main.py script edited to ensure now works, testing in progress.
 
 ## Features
