@@ -6,12 +6,19 @@ Forked from main as main archive, and therefore not updated for latest automatic
 
 ## To do
 Test several models txt2img
+
 Test all parameters for txt2img
+
 Test several models img2img
+
 Test all parameters for img2img
+
 Update main page to reflect update
+
 Decide on future of fork (time, and knowledge to do anything further?)
+
 Notify Stable Horde somehow
+
 
 ## Features
 
