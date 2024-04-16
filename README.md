@@ -19,6 +19,8 @@ Decide on future of fork (time, and knowledge to do anything further?)
 
 Notify Stable Horde somehow
 
+Is there a way to have this code auto update from auto1111? Can I use definitions from auto1111 to ensure this doesn't happen again?
+
 
 ## Features
 
